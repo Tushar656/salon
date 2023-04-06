@@ -1,0 +1,49 @@
+.OwnSalon{
+
+    .upperSection{
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url('../../../public/assets/s7.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: rgba(255, 0, 0, 0.5);
+        position: relative;
+
+        :before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            opacity: 0.25;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .wrapper{
+            text-align: center;
+            width: 75vw;
+            z-index: 1;
+
+            h1{
+                font-size: 50px;
+                font-weight: 700;
+                color: #000000;
+            }
+        }
+    }
+
+
+    .lower{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
